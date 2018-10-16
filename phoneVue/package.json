@@ -1,0 +1,42 @@
+{
+  "name": "phone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "mint-ui": "^2.2.13",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.4",
+    "qs": "^6.5.2",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "vue": "^2.5.17",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-socket.io": "^2.1.1-b",
+    "vue-websocket": "^0.2.3",
+    "vuex": "^3.0.1",
+    "ws": "^6.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
