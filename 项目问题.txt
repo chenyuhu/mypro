@@ -5,7 +5,7 @@
   步骤二、
     在.gitignore中添加一行代码：src/assets/js/mui.js
   步骤三、
-    在babel.config.js中添加"ignore": 
+    在babel.config.js中添加"ignore":
     [
       "./src/assets/js/mui.js"
     ]
@@ -43,7 +43,7 @@
           this.$emit('myname',msg)
         }
       }
-    }  
+    }
 三、兄弟间的通信
   步骤一、
     创建Bus.js文件
@@ -121,3 +121,16 @@
 五、客户端与服务器端实现轮询连接
   未解决...
 
+六、json数组对象数据的去重和排序的问题
+    排序：
+         json数据.sort((a,b)=>a.m_id-b.m_id);
+    去重：
+     for (let i = 0; i < json数据.length; i++) {
+         for (let j =i+1; j <json数据.msg.length; ) {
+             if (json数据.msg[i].id == json数据.msg[j].id ) {//通过id属性进行匹配；
+                 json数据.msg.splice(j, 1);//去除重复的对象；
+             }else {
+                 j++;
+             }
+         }
+     }
